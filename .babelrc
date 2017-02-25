@@ -1,0 +1,39 @@
+{
+  "presets": [
+    [
+      "es2015"
+    ],
+    "stage-0",
+    "react"
+  ],
+  /*"env": {
+    "development": {
+      "presets": [
+        "stage-0"
+      ]
+    }
+  }*/
+  "plugins": [
+    [
+      "transform-runtime",
+      {
+        "helpers": false,
+        // defaults to true
+        "polyfill": false,
+        // defaults to true
+        "regenerator": true,
+        // defaults to true
+        "moduleName": "babel-runtime"
+        // defaults to "babel-runtime"
+      }
+    ],
+    "transform-decorators-legacy",
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": "css"
+      }
+    ]
+  ]
+}
