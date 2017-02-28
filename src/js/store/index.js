@@ -15,7 +15,7 @@ import promise from './promise';
 
 //判断是否在chrome dev mode中
 /*
- let isDebuggingInChrome = __DEV__ && !!window.navigator.userAgent;
+let isDebuggingInChrome = __DEV__ && !!window.navigator.userAgent;
  */
 
 //引用的日志插件

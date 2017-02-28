@@ -88,13 +88,13 @@ export default class App extends React.Component {
                     trigger={null}
                     collapsible
                     collapsed={this.props.collapsed}
-                    style={{minWidth: 100}}
+                    style={{ minWidth: 100 }}
                 >
                     <Sidebar />
                 </Sider>
                 <Layout>
                     <NewHeader />
-                    <Content style={{padding: 16}}>
+                    <Content style={{ padding: 16 }}>
                         {/*路由字段*/}
                         <RouterContent />
                         <BackTop />

@@ -10,8 +10,7 @@ const getMenus = function (menuArray, siderFold, parentPath) {
         if (item.child) {
             return (
                 <Menu.SubMenu key={item.key}
-                              title={<span>{item.icon ? <Icon
-                                      type={item.icon}/> : ''}{siderFold && topMenus.indexOf(item.key) >= 0 ? '' : item.name}</span>}>
+                              title={<span>{item.icon ? <Icon type={item.icon} /> : ''}{siderFold && topMenus.indexOf(item.key) >= 0 ? '' : item.name}</span>}>
                     {getMenus(item.child, siderFold, parentPath + item.key + '/')}
                 </Menu.SubMenu>
             )

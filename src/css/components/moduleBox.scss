@@ -1,0 +1,35 @@
+/**
+ * Created by rqzheng on 2017/2/27.
+ */
+.module-box {
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition:height 0.5s;
+  overflow:hidden;
+  .module-header {
+    display:flex;
+    position: relative;
+    height: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    .module-name {
+      color: white;
+      font-size: 14px;
+      margin-left: 16px;
+      line-height: 40px;
+      flex:1;
+    }
+    .right-button-container{
+      flex:none;
+      margin-right:16px;
+      line-height: 40px;
+      color:white;
+    }
+  }
+  .content {
+    background-color: white;
+    padding: 16px;
+    position:relative;
+  }
+}

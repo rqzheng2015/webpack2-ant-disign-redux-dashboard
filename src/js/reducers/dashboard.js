@@ -5,12 +5,9 @@
 //控制管理系统界面的reducer
 import * as TYPES from '../actions/types';
 
-export
-type
-State = {
+export type State = {
     collapsed: boolean;
-}
-;
+};
 
 const initialState = {
     collapsed: false,

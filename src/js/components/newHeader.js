@@ -33,7 +33,7 @@ export default class NewHeader extends React.Component {
 
     render() {
         return (
-            <Header style={{background: '#fff', padding: 0}}>
+            <Header style={{ background: '#fff', padding: 0}}>
                 <Icon
                     className="trigger"
                     type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
