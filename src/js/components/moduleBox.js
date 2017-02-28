@@ -24,11 +24,16 @@ export default class ModuleBox extends React.Component {
 
     //change the status of the module box
     changeTabStatus() {
-        this.setState({ opened: !this.state.opened });
+        if (this.state.opened) {
+            this.setState({ moduleHeight: `${this.content.clientHeight}px`, opened: false })
+        } else {
+            this.setState({ opened: true });
+        }
+
     }
 
     componentDidUpdate() {
-        let height= (this.state.opened ? `${this.state.moduleHeight}px` : '40px');
+        let height = (this.state.opened ? `${this.state.moduleHeight}px` : '40px');
         this.content.style.height = (this.state.opened ? `${this.state.moduleHeight}` : '40px');
     }
 
