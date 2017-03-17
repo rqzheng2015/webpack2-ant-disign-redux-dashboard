@@ -1,7 +1,7 @@
-#Webpack2-ant design-boilerplate
+###Webpack2-ant-design-boilerplate
 
 
-#dependencies
+##dependencies
 1.webpack2  
 2.react  
 3.redux  
@@ -13,4 +13,4 @@
 ##Get Started
 1.`npm run dll`  build the dll file for the webpack project  
 2.`npm run dev` for dev mode, which will  run  the webpack dev server.  
-3.Or `npm run prod` to build the product mode project files
+3.`npm run prod` to build the product mode project files
