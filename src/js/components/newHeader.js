@@ -6,11 +6,10 @@ import {
     setCollapsedTrue,
     setCollapsedFalse,
 } from '../actions';
-
+import {withRouter} from 'react-router-dom';
 const {Header} = Layout;
 
 //这里要触发collapsed到header组件
-@connect(mapStateToProps)
 export default class NewHeader extends React.Component {
     constructor(props) {
         super(props);
@@ -50,3 +49,4 @@ function mapStateToProps(store) {
     };
 }
 
+export default withRouter(connect(mapStateToProps)(App));

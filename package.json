@@ -2,7 +2,7 @@
   "name": "webpack2-ant-design-redux-dashboard",
   "version": "1.0.0",
   "description": "webpack2-ant-design-redux-dashboard",
-  "dependencies": {
+ "dependencies": {
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0",
     "babel-runtime": "^6.23.0",
@@ -43,8 +43,7 @@
     "redux-persist": "^4.4.0",
     "redux-thunk": "^2.2.0",
     "reqwest": "^2.0.5",
-    "reselect": "^2.5.4",
-    "webpack": "^2.2.1"
+    "reselect": "^2.5.4"
   },
   "scripts": {
     "dev": "webpack-dev-server --config config/webpack.dev.js --no-inline --hot ",

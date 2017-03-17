@@ -12,8 +12,7 @@ import NewHeader from './components/newHeader';
 import Sidebar from './components/sidebar';
 import RouterContent from './routers';
 import {connect} from 'react-redux';
-
-@connect(mapStateToProps)
+import {withRouter} from 'react-router-dom';
 export default class App extends React.Component {
     constructor(props) {
         super(props);
@@ -111,3 +110,4 @@ function mapStateToProps(store) {
     };
 }
 
+export default withRouter(connect(mapStateToProps)(App));
