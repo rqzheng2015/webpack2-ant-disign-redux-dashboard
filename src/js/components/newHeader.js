@@ -10,7 +10,7 @@ import {withRouter} from 'react-router-dom';
 const {Header} = Layout;
 
 //这里要触发collapsed到header组件
-export default class NewHeader extends React.Component {
+class NewHeader extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -49,4 +49,4 @@ function mapStateToProps(store) {
     };
 }
 
-export default withRouter(connect(mapStateToProps)(App));
+export default withRouter(connect(mapStateToProps)(NewHeader));
